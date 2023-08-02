@@ -192,17 +192,17 @@ console.log("totalsum 1 is:", totalsum2);
 //2nd Method
 
 
-// let sum = [12,23,45,67,,98,90,56];
+let sum = [12,23,45,67,,98,90,56];
 
-// let totalsum = sum.reduce(function (accumulator, currentVal) {
+let totalsum = sum.reduce(function (accumulator, currentVal) {
 
 // console.log("previosVal", previousVal);
 // console.log("currentVal", currentVal);
 
-//    return accumulator + currentVal
+   return accumulator + currentVal
 
-// },0);
-// console.log("totalsum 2 is:",totalsum);
+},0);
+console.log("totalsum 2 is:",totalsum);
 
 
 
@@ -223,6 +223,31 @@ const addsum1 = (accumulator, currentVal) => accumulator + currentVal;
 let totalsum3 = sum3.reduce(addsum, 0)
 
 console.log("totalsum 3 is:", totalsum3);
+
+
+
+
+//1st Method
+//Anonyomus Function
+
+let word = "madam";
+var msg = function (word){
+let letter = word.split("").reverse().join("");
+let ispalindrome = word === letter;
+return ispalindrome;
+}
+console.log(msg(word));
+
+
+
+
+
+
+
+
+
+
+
 
 
 
